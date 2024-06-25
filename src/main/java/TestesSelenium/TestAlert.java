@@ -14,7 +14,7 @@ public class TestAlert {
 	public void deveInteragirComAlertSimples() {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().setSize(new Dimension(1200, 765));
-		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/campoDeTreinamento.html");
+		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/campoTreinamento.html");
 	
 		driver.findElement(By.id("alert")).click();
 		//Pedir para o selenium mudar o foco do Selenium para o alerta
@@ -32,7 +32,7 @@ public class TestAlert {
 	public void deveInteragirComAlertConfirm() {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().setSize(new Dimension(1200, 765));
-		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/campoDeTreinamento.html");
+		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/campoTreinamento.html");
 	
 		driver.findElement(By.id("confirm")).click();
 		Alert alerta = driver.switchTo().alert();
@@ -49,7 +49,7 @@ public class TestAlert {
 	public void deveInteragirComAlertDismiss() {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().setSize(new Dimension(1200, 765));
-		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/campoDeTreinamento.html");
+		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/campoTreinamento.html");
 	
 		driver.findElement(By.id("confirm")).click();
 		Alert alerta = driver.switchTo().alert();
@@ -66,7 +66,7 @@ public class TestAlert {
 	public void deveInteragirComAlertPromptPositivo() {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().setSize(new Dimension(1200, 765));
-		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/campoDeTreinamento.html");
+		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/campoTreinamento.html");
 		
 		driver.findElement(By.id("prompt")).click();
 		Alert alerta = driver.switchTo().alert();
@@ -85,7 +85,7 @@ public class TestAlert {
 	public void deveInteragirComAlertPromptECancelar() {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().setSize(new Dimension(1200, 765));
-		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/campoDeTreinamento.html");
+		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/campoTreinamento.html");
 		
 		driver.findElement(By.id("prompt")).click();
 		Alert alerta = driver.switchTo().alert();
@@ -99,6 +99,5 @@ public class TestAlert {
 		
 		driver.quit();
 	}	
-	
-	
+
 }
